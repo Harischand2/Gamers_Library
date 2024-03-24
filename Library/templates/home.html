@@ -1,0 +1,21 @@
+{% extends "landing_page.html" %}
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'home.js') }}"></script>
+<script>
+    let data = {{data|tojson}}
+</script>
+<div class="row home_row d-flex ">
+    <div class="col-4 text-center d-flex justify-content-center welcome flex-column">
+        <h1>Welcome</h1>
+        <p> <b>Gamers Library</b> is your gateway to immersive gaming for all enthusiasts, 
+        whether seasoned or new. Explore the captivating world of video games here 🎮</p>
+    </div>
+    <div class="text-center ">
+        <div class="row " id="pop_list">
+        </div>
+    </div>
+
+   
+</div>
+
+{% endblock %}

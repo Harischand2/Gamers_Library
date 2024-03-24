@@ -1,0 +1,96 @@
+{% extends "landing_page.html" %}
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'edit.js') }}"></script>
+<script>
+    let videoGame = {{current_element|tojson}}
+    let data = {{ data |tojson}}
+    let current_index = {{current_index|tojson}}
+    
+    console.log("videoGame : ", JSON.stringify(videoGame))
+</script>
+
+<div class="row d-flex justify-content-center" id="form_">
+    <div class="col-12 mt-2 text-center"><h1>EDIT GAME</h1></div>
+
+    <div class="col-10 form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" id="game_Name" aria-describedby="Game Name" placeholder="Enter Game Name">
+        <small id="g_n" class="form-text text-muted"></small>
+    </div>
+
+    <div class="col-5 form-group mt-2 ">
+            <label>Video Id</label>
+            <input type="text" class="form-control" id="v_id"  aria-describedby="Video Id" placeholder="Enter Video Id">
+            <small id="v_" class="form-text text-muted"></small>
+    </div>
+    <div class="col-5 form-group mt-2 ">
+        <label >SI Value</label>
+        <input type="text" class="form-control"  id="si_val"  aria-describedby="SI Value" placeholder="Enter si value">
+        <small id="s_" class="form-text text-muted"></small>
+    </div>
+
+    <div class="col-10 form-group mt-2 ">
+        <label>Summary</label>
+        <textarea type="text" class="form-control" id="game_summary"  aria-describedby="" placeholder="Enter Summary"></textarea>
+        <small id="g_s" class="form-text text-muted"></small>
+    </div>
+   
+
+    <div class="col-10 form-group mt-2 ">
+        <label>Year</label>
+        <input type="text" class="form-control"  id="year"  aria-describedby="Year" placeholder="Enter Year">
+        <small id="y_" class="form-text text-muted"></small>
+    </div>
+    
+    <div class="col-5 form-group mt-2 ">
+        <label>Number of Copies Sold</label>
+        <input type="text" class="form-control"  id="copies"  aria-describedby="Number of Copies" placeholder="Enter Number of Copies Sold">
+        <small id="cop_" class="form-text text-muted"></small>
+    </div>
+    <div class="col-5 form-group mt-2 ">
+        <label>Critics Rating</label>
+        <input type="text" class="form-control"  id="c_rating"  aria-describedby="Critics Rating" placeholder="Enter Critics Rating">
+        <small id="cr_" class="form-text text-muted"></small>
+    </div>
+    <div class="col-5 form-group mt-2 ">
+        <label>User Rating</label>
+        <input type="text" class="form-control"  id="u_rating"  aria-describedby="User Rating" placeholder="Enter User Rating">
+        <small id="ur_" class="form-text text-muted"></small>
+    </div>
+    <div class="col-5 form-group mt-2 ">
+        <label>Related Games</label>
+        <input type="text" class="form-control"  id="related_g"  aria-describedby="List of Related Games" placeholder="Enter list of Relates Games">
+        <small id="rg_" class="form-text text-muted"></small>
+    </div>
+    
+    <div class="col-10 form-group mt-2 ">
+        <label>Image Path</label>
+        <select class="form-control" id="img_path" placeholder="Select A Path">
+            <option>./static/witcher.jpeg</option>
+            <option>./static/gta5.jpg</option>
+            <option>./static/angry.jpeg</option>
+            <option>./static/valorant.webp</option>
+            <option>./static/fortnite.jpeg</option>
+            <option>./static/super_mario_bros.avif</option>
+            <option >./static/cod.jpeg</option>
+            <option >./static/street_fighter.jpeg</option>
+            <option >./static/minecraft.avif</option>
+            <option >./static/pubg.jpeg</option>
+            <option >./static/LOL.jpeg</option>
+            <option >./static/ufc4.jpeg</option>
+
+          </select>
+        <small id="img_p" class="form-text text-muted"></small>
+    </div>
+    
+    
+    <div class="col-4 mt-3 text-center form-group">
+        <button class="btn btn-outline-primary btn-lg pe-5 ps-5" id="submit_edit_btn"  type="submit">Submit</button>
+    </div>
+    <div class="col-4 mt-3 text-center form-group">
+        <button class="btn btn-outline-danger btn-lg pe-5 ps-5" id="discard_btn"  type="submit">Discard</button>
+    </div>
+</div>
+
+
+{% endblock %}

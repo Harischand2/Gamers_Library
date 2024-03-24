@@ -1,0 +1,32 @@
+{% extends "landing_page.html" %}
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'view.js') }}"></script>
+<script>
+let videoGame = {{current_element|tojson}}
+console.log("videoGame " +   JSON.stringify(videoGame));
+let data = {{ data |tojson}}
+</script>
+<div class="row d-flex view">
+    <div class="col-12 text-center" id="trailer">
+    </div>
+</div>
+<div class="row mt-1">
+    <div class="col-6 view_row ">
+        <div class="row" id="gameTitle"></div>
+        <div class="row" id="summary">
+        <div class="row">
+            <div class="col" id="m_data"></div>
+        </div>
+        </div>
+    </div>
+    <div class="col view_row " >
+        <span class="related_games">Related Games</span>
+        <div id="related">
+        </div>
+        <div id="edit_btn">
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

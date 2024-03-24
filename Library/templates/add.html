@@ -1,0 +1,91 @@
+{% extends "landing_page.html" %}
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'add.js') }}"></script>
+<script>
+    let current_index = {{ current_index | tojson }};
+    let data = {{ data | tojson }};
+</script>
+
+<div class="row">
+    <div class="col-6">
+        <div class="row d-flex justify-content-center" id="form_">
+            <div class="col-12 mt-2 text-center"><h1>ADD A NEW GAME</h1></div>
+        
+            <div class="col-10 form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" id="game_Name" aria-describedby="Game Name" placeholder="Enter Game Name">
+                <small id="g_n" class="form-text text-muted"></small>
+            </div>
+        
+            <div class="col-5 form-group mt-2 ">
+                    <label>Video Id</label>
+                    <input type="text" class="form-control" id="v_id"  aria-describedby="Video Id" placeholder="Enter Video Id">
+                    <small id="v_" class="form-text text-muted"></small>
+            </div>
+            <div class="col-5 form-group mt-2 ">
+                <label >SI Value</label>
+                <input type="text" class="form-control"  id="si_val"  aria-describedby="SI Value" placeholder="Enter si value">
+                <small id="s_" class="form-text text-muted"></small>
+            </div>
+        
+            <div class="col-10 form-group mt-2 ">
+                <label>Summary</label>
+                <textarea type="text" class="form-control" id="game_summary"  aria-describedby="" placeholder="Enter Summary"></textarea>
+                <small id="g_s" class="form-text text-muted"></small>
+            </div>
+           
+        
+            <div class="col-10 form-group mt-2 ">
+                <label>Year</label>
+                <input type="text" class="form-control"  id="year"  aria-describedby="Year" placeholder="Enter Year">
+                <small id="y_" class="form-text text-muted"></small>
+            </div>
+            
+            <div class="col-5 form-group mt-2 ">
+                <label>Number of Copies Sold</label>
+                <input type="text" class="form-control"  id="copies"  aria-describedby="Number of Copies" placeholder="Enter Number of Copies Sold">
+                <small id="cop_" class="form-text text-muted"></small>
+            </div>
+            <div class="col-5 form-group mt-2 ">
+                <label>Critics Rating</label>
+                <input type="text" class="form-control"  id="c_rating"  aria-describedby="Critics Rating" placeholder="Enter Critics Rating">
+                <small id="cr_" class="form-text text-muted"></small>
+            </div>
+            <div class="col-5 form-group mt-2 ">
+                <label>User Rating</label>
+                <input type="text" class="form-control"  id="u_rating"  aria-describedby="User Rating" placeholder="Enter User Rating">
+                <small id="ur_" class="form-text text-muted"></small>
+            </div>
+            <div class="col-5 form-group mt-2 ">
+                <label>Related Games</label>
+                <input type="text" class="form-control"  id="related_g"  aria-describedby="List of Related Games" placeholder="Enter list of Relates Games">
+                <small id="rg_" class="form-text text-muted"></small>
+            </div>
+            
+            <div class="col-10 form-group mt-2 ">
+                <label>Image Path</label>
+                <select class="form-control" id="img_path" placeholder="Select A Path">
+                    <option>./static/witcher.jpeg</option>
+                    <option>./static/angry.jpeg</option>
+                  </select>
+                <small id="img_p" class="form-text text-muted"></small>
+            </div>
+            
+            
+            <div class="col-8 mt-3 text-center form-group">
+                <button class="btn btn-outline-primary btn-lg pe-5 ps-5" id="add_btn"  type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6 d-flex justify-content-center align-items-center">
+        <div class="row d-flex" id="success_response">
+
+        </div>
+    </div>
+
+</div>
+
+
+
+{% endblock%}

@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color:  rgba(248, 244, 244, 0.2);
+    height: 100vh;
+}
+
+.parent_container{
+    height: 100vh;
+    /* background-color: rgba(255, 235, 205, 0.661); */
+    background-size: cover;
+}
+.btn{
+    margin-left: 20px;
+}
+#output_list, #pop_list{
+    list-style-type: none;
+}
+#m_data span{
+    margin-right: 20px;
+}
+
+.game_element {
+    margin-top: 10px;
+}
+
+.home_row{
+    margin: 0;
+    height: 100vh;
+}
+.welcome{
+    width: 100vw;
+}
+.welcome h1{
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.view_row {
+    margin-left: 50px;
+}
+#trailer{
+    padding: 0;
+}
+.related_games{
+    font-size: 30px;
+    font-weight: bold;
+}
+.span_r{
+    margin-right: 25px;
+    margin-top: 20px;
+}
+.add_link{
+    font-weight: 600;
+    font-size: 18px ;
+}
+.add_link:hover{
+    text-decoration: underline;
+
+}
+
+.warning{
+    color: red;
+}
+
+
+
+.title_p{
+    font-size: 30px;
+    font-weight: bold;
+}
+#form_{
+    margin-top: 30px;
+    margin-left:30px;
+    margin-right: 20px;
+    background-color: white;
+    box-shadow: 0 0 4px rgba(47, 48, 47, 0.972);
+    border: 2px rgba(255, 255, 255, 0.65) solid;
+    padding-bottom: 40px;
+
+}

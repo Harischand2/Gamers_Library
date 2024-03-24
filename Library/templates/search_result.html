@@ -1,0 +1,18 @@
+{% extends "landing_page.html" %}
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'search_result.js') }}"></script>
+<script>
+    let titles = {{search_result|tojson}}
+    let user_input = {{search_text|tojson}}
+</script>
+<div class="row">
+    <div class="col-12 mt-3 text-center" id="searchTop">
+       
+    </div>
+    <div class="row " id="output_list"> 
+
+    </div>
+   
+</div>
+
+{% endblock %}
