@@ -28,21 +28,20 @@ Gamers Library is a robust web application constructed with HTML, CSS, Bootstrap
 
 
 ## Getting Started
-
+### Prerequisite
+```shell
+pip install Flask
+```
 ### 1. Clone the repository
 ```shell
 https://github.com/Harischand2/Gamers_Library.git
 cd Library
 ```
-### 2. Install Flask
-```shell
-pip install Flask
-```
-### 3. Start your App
+### 2. Start your App
 ```shell
 python server.py
 ```
-### 5. Open the app in your browser
+### 3. Open the app in your browser
 * Visit http://127.0.0.1:5000 in your browser.
 
 ## Author
