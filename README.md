@@ -52,5 +52,5 @@ python server.py
 
 
 ## License
-* Copyright @ 2014 <b>Adrian Harischand</b> <br>
+* Copyright @ 2024 <b>Adrian Harischand</b> <br>
  <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="GitHub License">
