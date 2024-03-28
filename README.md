@@ -24,7 +24,7 @@ Gamers Library is a robust web application constructed with HTML, CSS, Bootstrap
 
 ## Tech Stack
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,jquery,bootstrap)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,jquery,bootstrap,flask)](https://skillicons.dev)
 
 
 ## Getting Started
